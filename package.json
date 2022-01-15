@@ -43,6 +43,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react-beautiful-dnd": "^13.1.2"
+    "@types/react-beautiful-dnd": "^13.1.2",
+    "mini-css-extract-plugin": "2.4.5"
   }
 }
