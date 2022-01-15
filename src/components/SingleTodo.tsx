@@ -21,14 +21,6 @@ const SingleTodo = ({ todo, todos, setTodos, index }: Props) => {
     inputRef.current?.focus();
   }, [edit]);
 
-  const handleDone = (id: number) => {
-    setTodos(
-      todos.map((todo) =>
-        todo.id === id ? { ...todo, isDone: !todo.isDone } : todo
-      )
-    );
-  };
-
   const handleDelete = (id: number) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
